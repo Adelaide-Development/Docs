@@ -6,13 +6,13 @@
 [//]: # (Limit yourself from using inline html)
 [//]: # (Thanks for maintaining the docs)
 
-# [Alexandra](#alexandra-ax)
+# Alexandra
 
 **This is unfinished documentation. Help us finish these docs: [Create a new issue](https://github.com/Adelaide-Development/Docs/issues/new).**
 
 **Don't forget to add the documentation label!**
 
-## [Rate Limiting](#ax-rate_limit)
+## Rate Limiting
 
 Rate Limiting is a deeply integrated part of the infrastructure behind NAME_TBD and prevents attackers from sending multiple requests one after another to flood the API with spam data or messages. Rate Limiting is quite simple: only 2 requests can be made per second which totals out to be 120 requests per minutes. Going over this limit will send a rate limit error response, halt the connection, and temporarily disable access to the API.
 
@@ -24,7 +24,7 @@ The following is an example rate limit error response
 }
 ```
 
-## [Version Defines](#ax-v_def)
+## Version Defines
 
 Version defines are a way of explicitly defining a version of the API to use. Over time, to save space and reduce maintenance times, some API versions will be deprecated and later removed. Starting with API v1, you can explicitly define which API version you want to use. For example, you can define API `v<Version>` for a specific version or omit this entirely to use the latest stable version.
 
