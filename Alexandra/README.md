@@ -1,20 +1,19 @@
 [//]: # (TODO: Get a final name and domain and replace placeholder domains.)
 
 [//]: # (To documentation maintainers)
-[//]: # (Add heading anchors prefixed with "ax-")
 [//]: # (Lint all Markdown if possible)
 [//]: # (Limit yourself from using inline html)
 [//]: # (Thanks for maintaining the docs)
 
 # Alexandra
 
-**This is unfinished documentation. Help us finish these docs: [Create a new issue](https://github.com/Adelaide-Development/Docs/issues/new).**
+**This is unfinished documentation. Help us finish these docs: [Create a new issue](https://github.com/Helselia/Docs/issues/new).**
 
 **Don't forget to add the documentation label!**
 
 ## Rate Limiting
 
-Rate Limiting is a deeply integrated part of the infrastructure behind NAME_TBD and prevents attackers from sending multiple requests one after another to flood the API with spam data or messages. Rate Limiting is quite simple: only 2 requests can be made per second which totals out to be 120 requests per minutes. Going over this limit will send a rate limit error response, halt the connection, and temporarily disable access to the API.
+Rate Limiting is a deeply integrated part of the infrastructure behind Helselia and prevents attackers from sending multiple requests one after another to flood the API with spam data or messages. Rate Limiting is quite simple: only 2 requests can be made per second which totals out to be 120 requests per minutes. Going over this limit will send a rate limit error response, halt the connection, and temporarily disable access to the API.
 
 The following is an example rate limit error response
 ```json
@@ -31,11 +30,11 @@ Version defines are a way of explicitly defining a version of the API to use. Ov
 Here are examples of version defines in a request URI
 ```
 Omit Version Defines:
-https://api.name-tbd.dev/api/users/@me
+https://api.helselia.dev/api/users/@me
 
 Using Version Defines (Stable Version):
-https://api.name-tbd.dev/api/v1/users/@me
+https://api.helselia.dev/api/v1/users/@me
 
 Using Version Defines (Beta Version):
-https://api.name-tbd.dev/api/v2/users/@me
+https://api.helselia.dev/api/v2/users/@me
 ```
